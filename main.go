@@ -74,13 +74,11 @@ func main() {
 	var h func() hash.Hash
 	switch *hashflg {
 	case "md5":
-		digestlen = 32
+		digestlen = md5.Size * 2
 		h = md5.New
-		//fmt.Printf("%T\n",h)
 	case "sha1":
-		digestlen = 40
+		digestlen = sha1.Size * 2
 		h = sha1.New
-		//fmt.Printf("%T\n",h)
 	}
 
 	var data []FileDigest
