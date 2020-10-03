@@ -4,7 +4,7 @@ hashchk
 _hashchk_ is a command line tool for showing md5 or sha1 checksum of files in a directory.  This is a [Go] port of a similar tool I wrote in [Python] mostly as a exercise.
 
 
-My use case is when I'm writing a script that has file output, I sometimes want to be able to verify that my code changes did not change the program's output.  I rename the output files from the intial run or move them to a different directory and then re-run with my code changes.  
+My use case is when I'm writing a script that has file output, I sometimes want to be able to verify that my code changes did not change the program's output.  I rename the output files from the intial run or move them to a different directory and then re-run with my code changes.  Often used together a companion program [version],
 
 Usage
 -----
@@ -46,3 +46,4 @@ MIT
 
 [go]:http://golang.org/
 [python]:http://python.org
+[version]:https://github.com/jaywgraves/version
